@@ -15,4 +15,4 @@ Your task is to write a very simple product catalogue app.
 
 ## Bonus points
 1. Dockerize the app.
-2. Write realistic unit/end-to-end tests.
+2. Write realistic unit/end-to-end tests. 
