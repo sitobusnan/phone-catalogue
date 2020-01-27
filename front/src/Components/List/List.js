@@ -5,7 +5,6 @@ import Loading from "../Loading/Loading";
 import Card from "../Card/Card";
 
 const List = ({ list }) => {
-  console.log(list);
 
   if (list.length == 0) {
     return (
@@ -19,9 +18,9 @@ const List = ({ list }) => {
       <div>
         <h1>CON INFO</h1>
         <div>
-        {list.map((elem, idx) => {
-          return <Card key={idx} data={elem} />;
-        })}
+          {list.map((elem, idx) => {
+            return <Card key={idx} data={elem} />;
+          })}
         </div>
       </div>
     );

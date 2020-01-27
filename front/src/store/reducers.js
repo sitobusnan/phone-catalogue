@@ -9,4 +9,7 @@ export default (state = initialState, action)=>{
     }
 }
 
+
 export const getInfo = state => state.info.list
+
+export const oneItem = (state, item) => state.info.list[+item]

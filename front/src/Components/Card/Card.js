@@ -1,8 +1,10 @@
 import React from "react";
+import { withRouter } from 'react-router-dom'
+
 
 const Card = props => {
   return (
-    <div onClick={}>
+    <div onClick={()=>{props.history.push(`/${props.data.id}`)}}>
         <h4>{props.data.name}</h4>
         <div>
             <img src={require(`../../../images/${props.data.imageFileName}`)}alt=""/>
@@ -12,4 +14,6 @@ const Card = props => {
   );
 };
 
-export default Card;
+
+
+export default withRouter(Card);
