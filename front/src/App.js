@@ -7,6 +7,7 @@ import List from './Components/List/List'
  const App=()=> {
   return (
     <div className="App">
+      <h1>To Test</h1>
       <Switch>
         <Route exact path="/" render={()=><List/>}/>
         <Route exact path="/:id" render={()=><Detail/>}/>
